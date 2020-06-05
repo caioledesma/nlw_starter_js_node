@@ -1,0 +1,181 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+    
+    margin: 0 auto; /*alinha de caixa pelo lado de fora da caixa*/
+}
+
+#page-create-point header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+#page-create-point header a{
+    color: var(--title-color);
+    font-weight: bolder;
+    display: flex;
+    align-items: center; /* nesse caso eu tenho que colocar o align-items na caixinha que está o item abaixo, no caso o SPAN e a setinha do site, por isso que esse item está aqui e nao embaixo, lembrar que ele está ecapsulado dentro de outra coisa, essa coisa é que vai organizar tudo  */
+}
+
+#page-create-point header a span{
+    margin-right: 16px;
+    background-image: url('../images/icones/arrow-left.svg');
+    width: 20px;
+    height: 24px;
+    /* background-repeat: no-repeat; */
+    display: flex;
+}
+
+form {
+    background-color: white;
+    padding: 64px; /* padding = preenchimento & toda caixa tem um preenchimento */
+    border-radius: 8px;
+    margin: 80px auto;
+    max-width: 730px;
+    /*box-sizing: border-box; comentei porque ele colocou no main esse elemento faz com que o tamanho máximo da caixa seja o border, não só mais o quadrado interno. Então ela junta o quadrado interno+padding+border, pra ver é só ir no F12*/
+
+}
+
+from h1{
+    font-size: 36px;
+}
+
+form fieldset{
+    margin-top: 64px;
+    border: 0;
+
+}
+
+form legend {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+form legend h2{
+    font-size: 24px;
+}
+
+form legend span{
+    color: var(--title-color);
+    font-size: 14px;
+    
+}
+
+form .field-group{
+    display: flex;
+    
+}
+
+form .field{
+    display: flex;
+    flex-direction: column ;
+    margin-bottom: 24px;
+    flex: 1;
+}
+
+form input, form select{
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    outline: none; 
+    border-radius: 8px;
+    
+}
+
+/* form input:focus{
+    outline: 1px solid #969699;
+    /* box-shadow: 0 0 3pt 2pt #969699;
+    box-shadow: 0px 0px 0px 1px #fff inset;
+    border-radius: 8px; */
+    /* border: #999 solid 1px;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0px 0px 0px 1px #fff inset; }*/
+     
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+form label{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* esse abaixo é para mostrar como atacar somente um elemento quando eles tem nomes iguais e estão na mesma DIV, se for ver no F12 ele só está aplicando para o item da direita*/
+
+form .field-group .field + .field{
+    margin-left: 24px;
+} 
+
+form button{
+    width: 260px;
+    height: 56px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 40px;
+    transition: background-color 0.4s; /*quando quer colocar a transição em apenas um elemento pode colocar ele assim, se nao ele vai aplicar em todos os outros elementos, é por isso que o quadrado ficava voando no outro projeto*/
+}
+
+form button:hover{
+    background-color: #2FB86E;
+}
+
+.items-grid{
+    display: grid;
+    /*grid-template-columns: 200px 200px 200px; isso são 3 colunas de 200px cada*/ 
+    grid-template-columns: 1fr 1fr 1fr;/* mesma forma só que por FRAÇÃO */
+    gap: 16px; /*forma fácil de fazer margins em um grid*/
+}
+
+.items-grid li{
+    background-color: #f5f5f5;
+    list-style: none;
+    border: 2px solid #f5f5f5;
+    height: 180px;
+    border-radius: 8px;
+    padding: 32px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+.items-grid li span{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: var(--title-color);
+    margin-top: 12px;
+
+}
+
+/*esse css é só pra quando alguem clicar nele, vamos fazer isso com o JS*/
+.items-grid li.selected{
+    background: #e1faec;
+    border: 2px solid #34cb79;
+}
+
+.items-grid li img,
+.items-grid li span{
+    pointer-events: none;
+
+}

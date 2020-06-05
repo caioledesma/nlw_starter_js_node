@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    
+    {% block title %}
+        <title>Ecoleta - NLW - Caio</title>
+    {% endblock title %}
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet" >
+    
+    {% block styles %}
+    {% endblock styles %}
+
+    <link href="css/responsive.css" rel="stylesheet" ><!--É melhor deixar o responsive abaixo para ele aplciar as regras "por último" e nao sobrescrever-->
+</head>
+<body>
+
+    <div id="{{ pageId }}">
+        {% block content %}
+        {% endblock content %}
+    </div>
+        
+        {% block modal %}
+        {% endblock modal %}
+
+        {% block scripts %}
+        {% endblock scripts %}        
+</body>
+</html>

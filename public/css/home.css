@@ -1,0 +1,107 @@
+#page-home{
+    height: 100vh;/* 100vh significa que ele vai dividir a tela em "100 bloquinhos" e vai usar ele todo*/
+    background-image: url('../images/icones/home-background.svg');
+    background-repeat: no-repeat;
+    background-position: 35vw bottom;
+    /* background-size: 50%; */
+    
+}
+
+#page-home .content{
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#page-home header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#page-home header a{
+    
+    /* como colocamos o display: flex no SPAN ele perdeu o atributo de ser inline, ai dentro do a colocamos o display flex novamente para eles ficarem um do lado do outro*/
+    display: flex;
+    color: var(--title-color);
+    font-weight: 700;
+    text-decoration: none;
+
+}
+
+#page-home header a span{
+    background-image: url('../images/icones/log-in.svg');
+    /* quando é background image obrigatoriamente tem que ter altura e larguar*/
+    width: 20px;
+    height: 20px;
+    /*por conta do display padrão do SPAN, precisa ajustar ele também*/
+    display: flex;
+    margin-right: 10px;
+}
+
+
+#page-home main{
+    max-width: 560px;
+    flex: 1; /* esse flex 1 um faz com que o elemento strong preencha todo o espaço do elemento pai*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#page-home main h1{
+    font-size: 54px;
+}
+
+#page-home main p{
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 24px;;
+}
+
+
+#page-home main a{
+    width: 100%;
+    max-width: 360px;
+    height: 72px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    transition: 400ms;
+    color: white;
+    
+}
+
+#page-home main a:hover {
+    background-color: #2FB86E
+}
+
+
+#page-home main a span{
+    width: 72px;
+    height: 72px;
+    background-color: rgba(0,0,0,0.08);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex; /*esse display é pra fazer aparecer o item criado com a função content e ::after abaixo*/
+    align-items: center;
+    justify-content: center;
+}
+
+#page-home main a span::after{
+    content: "";
+    background-image: url('../images/icones/search.svg');
+    width: 20px;
+    height: 20px;
+    
+}
+
+#page-home main a strong{
+    flex: 1; /*esse flex 1 um faz com que o elemento strong preencha todo o espaço do elemento pai */
+    text-align: center;
+}
