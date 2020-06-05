@@ -67,6 +67,8 @@ function funHandleSelectedItem(event){
     itemLi.classList.toggle("selected")
 
     const itemId = itemLi.dataset.id 
+
+   // console.log("item id:", itemId)
    
     //Pra fazer o selectedItems funcionar, que é a função de pegar os selecionados pelo usuario e mandar para o banco precisa de uma logica, vamos seguir o algoritmo:
 
@@ -94,6 +96,8 @@ function funHandleSelectedItem(event){
         selectedItems.push(itemId)
     }
     
+    //console.log("selectedItems:", selectedItems )
+
     //atualizar o campo escondido (hidden do input) com os itens selecionados
     collectedItems.value = selectedItems
 }

@@ -6,30 +6,30 @@ const sqlite3 = require("sqlite3").verbose()
 //criar o objeto que irá fazer operações no banco de dados
 const db = new sqlite3.Database("./src/database/database.db")//Database nesse caso é o método e dentro dos parenteses é o argumento
 
-module.exports.db
+module.exports = db
 
 // utilizar o objeto de banco de dados, para nossas operações 
 //funções se tornam métodos quando estão juntas de um objeto
-// db.serialize(() => {
+db.serialize(() => {
 
-//     //Com comandos SQL eu vou:
+    //Com comandos SQL eu vou:
 
-//     //1.Criar uma tabela 
-// //     db.run(`
-// //         CREATE TABLE IF NOT EXISTS places (
-// //             id INTEGER PRIMARY KEY AUTOINCREMENT,
-// //             image TEXT,
-// //             name TEXT,
-// //             address TEXT,
-// //             address2 TEXT,
-// //             state TEXT,
-// //             city TEXT,
-// //             items TEXT
-// //         );
-// //     `)
+    //1.Criar uma tabela 
+//     db.run(`
+//         CREATE TABLE IF NOT EXISTS places (
+//             id INTEGER PRIMARY KEY AUTOINCREMENT,
+//             image TEXT,
+//             name TEXT,
+//             address TEXT,
+//             address2 TEXT,
+//             state TEXT,
+//             city TEXT,
+//             items TEXT
+//         );
+//     `)
 
-// //     //Syntaxe em SQL é uma bosta e é dificil de achar o erro CASO ESTEJA ERRADO, prestar mto atenção
-// //     //com crase `` eu consigo quebrar a linha sem prejudicar o código, se for aspas ele da problema, o nome é template literals
+//     //Syntaxe em SQL é uma bosta e é dificil de achar o erro CASO ESTEJA ERRADO, prestar mto atenção
+//     //com crase `` eu consigo quebrar a linha sem prejudicar o código, se for aspas ele da problema, o nome é template literals
 
 // //     //2. inserir dados na tabela 
 // // const query = `
@@ -88,15 +88,14 @@ module.exports.db
 //     // })
 
 
-//     //4. Deletar um dado da tabela, nao vamos implantar mas ele vai ensinar
-//     // db.run(`DELETE FROM places WHERE id = ?`, [1], function(err) {
-//     //     if(err) {
-//     //         return console.log(err)
-//     //     }
+   // 4. Deletar um dado da tabela, nao vamos implantar mas ele vai ensinar
+    // db.run(`DELETE FROM places WHERE id = ?`, [3], function(err) {
+    //     if(err) {
+    //         return console.log(err)
+    //     }
 
-//     //     console.log("Registro deletado com sucesso")
+    //     console.log("Registro deletado com sucesso")
         
-//     // })
+    // })
 
-
-// })
+ })
