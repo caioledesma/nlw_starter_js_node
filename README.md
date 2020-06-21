@@ -19,7 +19,7 @@ Next Level Week - Ecoleta Project - RocketSeat <br />
 
 <h3 align="center">  
   <a href="#information_source-about">About</a> |
-  <a href="#:question:-how-it-works">How it works</a> | 
+  <a href="#question-how-it-works">How it works</a> | 
   <a href="#rocket-technologies">Technologies</a> | 
   <a href="#wave-author">Author</a> 
 </h3>
