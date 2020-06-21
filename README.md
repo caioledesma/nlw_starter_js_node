@@ -1,5 +1,5 @@
 <h1 align="center">
-Next Level Week - Projeto Ecoleta - RocketSeat <br />
+Next Level Week - Ecoleta Project - RocketSeat <br />
 </h1>
 
 <br />
@@ -18,40 +18,38 @@ Next Level Week - Projeto Ecoleta - RocketSeat <br />
 </p>
 
 <h3 align="center">  
-  <a href="#information_source-sobre">Sobre</a> |
-  <a href="#interrobang-motivo">Como Funciona</a> | 
-  <a href="#rocket-tecnologias-utilizadas">Tecnologias</a> | 
-  <a href="#ship-como-navegar">Como Navegar</a> |
-  <a href="#wave-autor">Autor</a> 
+  <a href="#information_source-about">About</a> |
+  <a href="#:question:-how-it-works">How it works</a> | 
+  <a href="#rocket-technologies">Technologies</a> | 
+  <a href="#wave-author">Author</a> 
 </h3>
 
 <br />
 
-## :information_source: Sobre
+## :information_source: About
 
-Aplicação desenvolvida do zero com instrução da Escola de programação RocketSeat, para treinar a aplicação dos tecnologias de HTML, CSS, Javascript, Nunjucks e SQLite3. 
-A aplicação está hospedada no link <a href="https://heroku.com/">Link Ecoleta </a> onde você poderá adicionar novos pontos de coleta e pesquisar por pontos na sua região.
+Application developed from scratch with instruction from the RocketSeat Programming School, to train the application of HTML, CSS, Javascript, Nunjucks and SQLite3 technologies.
 
 <br />
 
-### Cadastro
-
+### Register
+<p align="center">
 <img alt="Gif cadastrando um ponto" src="https://ik.imagekit.io/tdrippvoj8/cadastro-ponto-ecoleta_m_r0uszvi.gif" width=800>
+</p>
 
-
-### Consulta ao Banco de Dados
-
+### Database Consultation
+<p align="center">
 <img alt="Gif cadastrando um ponto" src="https://ik.imagekit.io/tdrippvoj8/consulta-banco-ecoleta_QdcqEXHkV.gif" width=800>
+</p>
+<br />
+
+## :question: How it works
+
+This is a training application to see in practice the application of tools and technologies, as well as the database logic.
 
 <br />
 
-## :question: Como Funciona
-
-Essa é uma aplicação de treino para ver na prática a aplicação das ferramentas e tecnologias, assim como a lógica de banco de dados
-
-<br />
-
-## :rocket: Tecnologias Utilizadas
+## :rocket: Technologies
 
 - Javascript 
 - CSS
@@ -61,21 +59,10 @@ Essa é uma aplicação de treino para ver na prática a aplicação das ferrame
 
 <br />
 
-## :ship: Como Navegar
-Para acessa basta clicar no link <a href="https://heroku.com/">Link Ecoleta </a>. Para ir além do que foi proposta no curso eu hospedei a aplicação na plataforma Heroku para melhorar a sua experiência de visualização. 
-
-<details>
-<summary>Se preferir, siga as instruções de instalação:</summary>
-<br>
-Em breve as instruções de instalação
-</details>
-
-<br />
-
 ---
 
 
-### :wave: Autor
+### :wave: Author
 In the process to be a great Product Engineer... join me! 
 
 
